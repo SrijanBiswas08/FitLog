@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gym Goer Signup – FitBridge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 2rem;
+    }
+    h2 {
+      text-align: center;
+      color: #0f766e;
+    }
+    form {
+      max-width: 500px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #0f766e;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sign Up as Gym Goer</h2>
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="gender">Gender</label>
+    <input type="text" id="gender" name="gender" required />
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <label for="height">Height (in cm)</label>
+    <input type="number" id="height" name="height" required />
+
+    <label for="weight">Weight (in kg)</label>
+    <input type="number" id="weight" name="weight" required />
+
+    <label for="fitness">Current Fitness Level</label>
+    <select id="fitness" name="fitness" required>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Advanced">Advanced</option>
+    </select>
+
+    <label for="goals">Primary Fitness Goals</label>
+    <select id="goals" name="goals" required>
+      <option value="Build Muscle">Build Muscle</option>
+      <option value="Lose Fat">Lose Fat</option>
+      <option value="Improve Stamina">Improve Stamina</option>
+    </select>
+
+    <label for="medical">Any Medical Conditions <span style="font-weight: normal; color: #888;">(Optional)</span></label>
+    <input type="text" id="medical" name="medical" />
+
+    <label for="password">Create Password</label>
+    <input type="password" id="password" name="password" required />
+
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+   <button onclick="window.location.href='home.html'">Sign Up</button>
+  </form>
+</body>
+</html>
